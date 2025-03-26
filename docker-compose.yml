@@ -6,8 +6,8 @@ services:
       POSTGRES_DB: exampledb
       POSTGRES_USER: himanshu
       POSTGRES_PASSWORD: root
-    volumes:
-      - pgdata:/var/lib/postgresql/data
+   volumes:
+  - ./init:/docker-entrypoint-initdb.d
     networks:
       - my_network
 
