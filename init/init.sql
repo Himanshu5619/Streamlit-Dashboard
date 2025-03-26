@@ -5,6 +5,6 @@ CREATE TABLE passengers (
 );
 
 INSERT INTO passengers (name, location) VALUES
-('Alice', 'New York'),
-('Bob', 'Los Angeles'),
-('Charlie', 'Chicago');
+('Himanshu', 'Nagpur'),
+('Shivam', 'Ludiyana'),
+('Prashant', 'Chandigarh');
