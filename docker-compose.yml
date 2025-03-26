@@ -6,6 +6,8 @@ services:
       POSTGRES_DB: exampledb
       POSTGRES_USER: himanshu
       POSTGRES_PASSWORD: root
+    volumes:
+      - pgdata:/var/lib/postgresql/data
     networks:
       - my_network
 
@@ -21,3 +23,6 @@ services:
 networks:
   my_network:
     driver: bridge
+
+volumes:
+  pgdata:
